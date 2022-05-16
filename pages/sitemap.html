@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE MAP</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        a:hover{
+            color: #f9c349;
+        }
+        .logo img{
+            filter: invert(1);
+        }
+        .about{
+            margin-bottom: 200px;
+        }
+        .avatar img{
+            border-radius: 50%;
+        }
+        #avt2{
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all ease-in-out 0.4s;
+            transition-delay: 0.2s;
+        }
+         #avt1:hover + #avt2, #avt2:hover{
+            transform: translate(-50%, -50%) rotate(60deg);
+        }
+        h4{
+            margin-left: 20px;
+        }
+        .li-page-1{
+            list-style:circle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="about-background"></div>
+        <div class="about-background-color"></div>
+        <header class="about">
+            <div class="row justify-content-center logo">
+                <div class="img" style="width: 200px;">
+                    <a href="./home.html">
+                        <img src="../asset/pictures/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row header">
+                <div class="col-md-12 text-center">
+                    <div class="header-name mt-4">ABOUT ME</div>
+                </div>
+            </div>
+        </header>
+        <div class="row content align-items-center">
+            <div class="col-md-6 avatar mb-4">
+                <div class="w-100" style="position: relative;">
+                    <img id="avt1" src="https://scontent.fhan3-5.fna.fbcdn.net/v/t39.30808-6/272116210_1616352172031681_15670885165742009_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=GwFF7eG5MQ0AX83aak5&tn=yDQDS0BThIcl-G83&_nc_ht=scontent.fhan3-5.fna&oh=00_AT--FUAdQXNjKKKVhBdqHNsmlQR-ZcsLafloIMCRvKbdiw&oe=62721E13" alt="sample" width= 100%>
+                    <img id="avt2" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/180725958_1432677520399148_4774467066708733847_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=EKIAlDRBU-IAX-XxsCL&_nc_ht=scontent.fhan3-1.fna&oh=00_AT_Oj3br-CgSrkF_gS7ZnKIUf2GtcB-sb1e5QPquw3UseA&oe=6293DEAD" alt="sample" width= 100%>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Trần Văn Phúc</h1>
+                <div><span>Quê quán:</span> Hưng Yên</div>
+                <div><span>Mã SV:</span> 11194161</div>
+                <div>
+                    <strong>Facebook:</strong>
+                    <a href="https://www.facebook.com/phuctran06082001/"> Phúc Trần</a>
+                </div>
+                <h4 class="mt-4">Mô tả:</h4>
+                <p>Sinh viên năm 3, khoa Công nghệ thông tin, trường Đại học Kinh tế quốc dân</p>
+                <h4 class="mt-4">Sở thích:</h4>
+                <div>
+                    <ul>
+                        <li><em>Watch cinematic movies</em></li>
+                        <li><em>Play strategy games</em></li>
+                        <li><em>...</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row content site-map">
+            <ul>
+                <li class="li-page-1"><h3><a href="./sign-up.html">SIGN UP</a></h3></li>
+                <li class="li-page-1"><h3><a href="./home.html">HOME</a></h3></li>
+                <li class="li-page-1"><h3><a href="./shop.html">SHOP</a></h3></li>
+                <li><h4><a href="./product.html">PRODUCT</a></h4></li>
+                <li class="li-page-1"><h3><a href="./blog.html">BLOG</a></h3></li>
+                <li><h4><a href="./post.html">POST</a></h4></li>
+                <li class="li-page-1"><h3><a href="./about.html">ABOUT</a></h3></li>
+                <li class="li-page-1"><h3><a href="./contact.html">CONTACT</a></h3></li>
+                <li class="li-page-1"><h3><a href="./cart.html">CART</a></h3></li>
+                <li><h4><a href="./check-out.html">CHECK OUT</a></h4></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row footer-info">
+                <div class="col-md-6 contact-detail d-flex flex-column mt-3">
+                    <div>CONTACT DETAILS</div>
+                    <a href="">0968500075</a>
+                    <a href="">neu@edu.vn</a>
+                    <a href="">207 Giải Phóng, Đồng Tâm, Hai Bà Trưng, Hà Nội</a>
+                </div>
+                <div class="col-md-6 quick-links d-flex flex-column align-items-end mt-3">
+                    <div>QUICK LINKS</div>
+                    <a href="">Shipping & Returns</a>
+                    <a href="">Contact</a>
+                    <a href="">Customer Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../vendor/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery-3.6.0.min.js"></script>
+</body>
+</html>

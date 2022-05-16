@@ -1,0 +1,299 @@
+@font-face {
+    font-family: Playfair;
+    src: url('./asset/font/Playfair.ttf');
+}
+.w-20{
+    width: 20%;
+}
+.w-45{
+    width: 45%;
+}
+.w-50{
+    width: 50%;
+}
+.w-80{
+    width: 80%;
+}
+.w-100{
+    width: 100%;
+}
+body{
+    max-width: 100%;
+}
+a{  
+    color: #62615C;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a:hover{
+    color: #f9c349;
+}
+footer a{
+    color: white;
+}
+li{
+    list-style: none;
+}
+#cart li{
+    position: absolute;
+    border: 2px solid #62615C;
+    padding: 2px 10px;
+    background-color: white;
+    z-index: 1;
+}
+#cart li + div{
+    position: relative;
+    padding: 10px;
+    top: -0.6em;
+    left: 0.3em;
+    border: 2px solid #62615C;
+    border-radius: 50%;
+}
+.logo .img img{
+    width: 200px;    
+    height: auto;
+}
+.navbar ul{
+    padding-left: 0;
+}
+.navbar li{
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.home-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background: url('./asset/pictures/home-background.jpg');
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.7);
+}
+.home-background-color{
+    background-image: linear-gradient(180deg,black 25%,white 180%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 900px;
+    width: 100%;
+    opacity: 0.6;
+}
+.header{
+    color: white;
+    font-family: 'Playfair';
+}
+.header-title, .header-description{
+    font-size: 1em;
+}
+.header-name{
+    font-size: 5em;
+    line-height: 1.2;
+}
+
+button.view-more{
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.2s;
+}
+button.view-more:hover{
+    background-color: white;
+    color: black
+}
+.content{
+    font-family: 'Playfair';
+    font-weight: bold;
+    margin: 90px 0;
+}
+.content-title-1{
+    color: #f9c349;
+    font-size: 1em;
+}
+.content-title-2{
+    font-family: 'Playfair';
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.content-title-3{
+    font-size: 1em;
+}
+:is(.products, .product) img{
+    width: 100%;
+}
+.product-category{
+    font-size: 0.9em;
+}
+.product-name{
+    font-family: 'Playfair';
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.product-price{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.sign-up-form .col-md-6 div:first-child{
+    font-family: 'Playfair';
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0 70px 0 140px;
+}
+:is(.sign-up-form, .search-form) input{
+    width: 80%;
+    height: 50px;
+    font-size: 1em;
+    padding: 9px;
+    border: 1px solid gainsboro;
+}
+.search-form .col-md-6 div:first-child{
+    font-family: 'Playfair';
+    font-size: 1.7em;
+    font-weight: 800;
+    margin: 0 100px;
+}
+:is(.sign-up-form, #contact-form, #checkout-form, .add-to-cart, .cart, .search-form) button{
+    font-family: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #f9c349;
+}
+.sign-up-form{
+    margin: 150px 0;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 70px 0;
+    height: fit-content;
+    width: 100%;
+}
+footer .contact-detail div, footer .quick-links div{
+    font-family: 'Playfair';
+    font-size: 2em;
+    margin: 10px 0;
+}
+/* --------- */
+.page-title{
+    font-family: 'Playfair';
+    font-size: 2em;
+    color: #f9c349;
+}
+.about-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background: url('./asset/pictures/about-background.jpg');
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.7);
+}
+.about-background-color{
+    background-image: linear-gradient(180deg,black 25%,white 180%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 350px;
+    width: 100%;
+    opacity: 0.6;
+}
+/* -------- */
+.post{
+    font-family: 'Playfair';
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 60px;
+}
+.post-name{
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0;  
+}
+.post-short-content{
+    font-size: 1em;
+    height: 3em;
+    overflow: hidden;
+}
+.post-author{
+    font-style: italic;
+}
+/* ----------- */
+.form{
+    box-shadow: 8px 8px 36px -10px #004277;
+}
+:is(#contact-form, #checkout-form) input{
+    height: 40px;
+    font-size: 1em;
+    padding: 9px;
+    margin: 10px 0;
+    border: 1px solid gainsboro;
+}
+:is(#contact-form, #checkout-form) textarea{
+    font-size: 1em;
+    padding: 9px;
+    margin: 10px 0;
+    border: 1px solid gainsboro;
+    resize: none;
+}
+/* --------------- */
+.checkout-title{
+    font-family: 'Playfair';
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 0;
+    border-bottom: 1px solid gainsboro;
+}
+.your-order{
+    padding: 0 20px 20px 20px;
+    border: 1px solid gainsboro;
+}
+.checkout-info-1{
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #f7f6f7;
+    border-top: 3px solid #f9c349;
+}
+.checkout-info-2{
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 10px 0 30px 0;
+}
+:is(.your-order, .cart) tr{
+    border-bottom: 1px solid gainsboro;
+}
+:is(.your-order, .cart) td{
+    padding: 10px 0;
+}
+@media (max-width: 768px){
+    .header-name{
+        font-size: 40px;
+    }
+    header.home, .home-background, .home-background-color{
+        height: 700px;
+    }
+    header.about, .about-background, .about-background-color{
+        height: 250px;
+    }
+    body{
+        font-size: 80% !important;
+    }
+    :is(.sign-up-form, .search-form) .col-md-6 div:first-child{
+        margin: 0;
+    }
+}
